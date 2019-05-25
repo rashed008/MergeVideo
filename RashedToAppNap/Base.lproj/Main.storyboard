@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V8f-QO-CfK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Appnap Video Merge App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MergeVideoViewController" customModule="RashedToAppNap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1k-UY-w7y">
+                                <rect key="frame" x="16" y="262" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.4385927288" blue="0.1301180173" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cu2-a1-OY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select video one">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadVideoOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIJ-XG-ahc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pH0-8n-5f1">
+                                <rect key="frame" x="16" y="313" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.4385927288" blue="0.1301180173" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nBV-Zo-OcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select video two">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadVideotwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teK-vl-bPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORx-FH-rE0">
+                                <rect key="frame" x="16" y="361" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.4385927288" blue="0.1301180173" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="B8x-4v-fvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add a background music">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBackgroungMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHr-dL-bBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-z6-35T">
+                                <rect key="frame" x="16" y="409" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.4385927288" blue="0.1301180173" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hOj-0I-mnI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MERGE VIDEO WITH MUSIC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="merge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBd-Nx-JC7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ORx-FH-rE0" firstAttribute="top" secondItem="pH0-8n-5f1" secondAttribute="bottom" constant="8" id="68W-Aw-0tq"/>
+                            <constraint firstItem="b1k-UY-w7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A6V-cl-PL8"/>
+                            <constraint firstItem="NrN-z6-35T" firstAttribute="top" secondItem="ORx-FH-rE0" secondAttribute="bottom" constant="8" id="Bnm-Cj-5oJ"/>
+                            <constraint firstItem="ORx-FH-rE0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LbN-9C-yy8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ORx-FH-rE0" secondAttribute="trailing" constant="16" id="QTv-0t-wqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1k-UY-w7y" secondAttribute="trailing" constant="16" id="Qhb-iQ-n9z"/>
+                            <constraint firstItem="b1k-UY-w7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="198" id="ZdL-xy-wWs"/>
+                            <constraint firstItem="pH0-8n-5f1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aTf-1c-7Se"/>
+                            <constraint firstItem="NrN-z6-35T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dQe-CM-BDq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pH0-8n-5f1" secondAttribute="trailing" constant="16" id="fvA-wX-RvX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NrN-z6-35T" secondAttribute="trailing" constant="16" id="qrF-EM-VlE"/>
+                            <constraint firstItem="pH0-8n-5f1" firstAttribute="top" secondItem="b1k-UY-w7y" secondAttribute="bottom" constant="11" id="zey-E3-Sh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Appnap Video Merge App" id="CFc-Uc-mH5"/>
+                    <connections>
+                        <outlet property="btnFour" destination="NrN-z6-35T" id="aLG-1t-a0H"/>
+                        <outlet property="btnOne" destination="b1k-UY-w7y" id="QuC-fR-TLX"/>
+                        <outlet property="btnThree" destination="ORx-FH-rE0" id="7lN-Yf-SdM"/>
+                        <outlet property="btnTwo" destination="pH0-8n-5f1" id="XeE-Xs-bZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="792.95352323838085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zr0-H7-zSq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V8f-QO-CfK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rm0-gh-WF1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pqg-4D-QSm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WO3-iT-bM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+</document>
